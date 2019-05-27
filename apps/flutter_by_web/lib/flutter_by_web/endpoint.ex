@@ -40,5 +40,11 @@ defmodule FlutterByWeb.Endpoint do
     key: "_flutter_by_web_key",
     signing_salt: "5VJFH5HP"
 
+  plug Corsica,
+    origins: ["http://localhost:19001", "http://localhost:8001"],
+    log: [rejected: :error, invalid: :warn, accepted: :debug],
+    allow_headers: ["content-type"],
+    allow_credentials: true
+
   plug FlutterByWeb.Router
 end

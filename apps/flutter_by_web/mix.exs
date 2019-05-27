@@ -43,7 +43,8 @@ defmodule FlutterByWeb.MixProject do
       {:gettext, "~> 0.11"},
       {:flutter_by, in_umbrella: true},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:corsica, "~> 1.1"}
     ]
   end
 
