@@ -6,8 +6,8 @@ use Mix.Config
 
 # Configure your database
 config :flutter_by, FlutterBy.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "isaac",
+  password: "newton",
   database: "flutter_by_dev",
   hostname: "localhost",
   pool_size: 10
