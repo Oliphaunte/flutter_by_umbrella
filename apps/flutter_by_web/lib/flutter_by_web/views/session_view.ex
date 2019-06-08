@@ -3,6 +3,7 @@ defmodule FlutterByWeb.SessionView do
   alias FlutterByWeb.SessionView
 
   def render("new_session.json", %{user: user}) do
-    %{user: %{ user_id: user.id, email: user.email }}
+    %{user_id: user.id, 
+      email: user.email}
   end
 end
